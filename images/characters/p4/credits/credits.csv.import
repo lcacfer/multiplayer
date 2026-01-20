@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c36bpk8felrsg"
+
+[deps]
+
+files=["res://images/characters/p4/credits/credits.notes.translation", "res://images/characters/p4/credits/credits.authors.translation", "res://images/characters/p4/credits/credits.licenses.translation", "res://images/characters/p4/credits/credits.urls.translation"]
+
+source_file="res://images/characters/p4/credits/credits.csv"
+dest_files=["res://images/characters/p4/credits/credits.notes.translation", "res://images/characters/p4/credits/credits.authors.translation", "res://images/characters/p4/credits/credits.licenses.translation", "res://images/characters/p4/credits/credits.urls.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://87ypdb6oj28m"]
+
+[ext_resource type="Script" uid="uid://cq381wf0v0b3" path="res://scripts/game.gd" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://cw78m2hk3gj32" path="res://scenes/button.tscn" id="2_7jktm"]
+[ext_resource type="PackedScene" uid="uid://co5bqm6tilfsc" path="res://scenes/main.tscn" id="2_p57ef"]
+[ext_resource type="PackedScene" uid="uid://dt608kbd42agm" path="res://scenes/player.tscn" id="4_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://2hwgxdfyivlh" path="res://scenes/bullet.tscn" id="4_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://bswgmxp16yce5" path="res://scenes/door.tscn" id="5_7jktm"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("player_spawner", "player_spawn_positions", "bullet_spawner")]
+script = ExtResource("1_80nbo")
+player_spawner = NodePath("Spawners/PlayerSpawner")
+player_spawn_positions = [NodePath("Players/Player1"), NodePath("Players/Player2"), NodePath("Players/Player3"), NodePath("Players/Player4")]
+player_scene = ExtResource("4_fc0e3")
+bullet_spawner = NodePath("Spawners/BulletSpawner")
+bullet_scene = ExtResource("4_u5sy4")
+mainmenu_scene = ExtResource("2_p57ef")
+door_scene = ExtResource("5_7jktm")
+
+[node name="Buttons" type="Node2D" parent="."]
+
+[node name="Button1" parent="Buttons" instance=ExtResource("2_7jktm")]
+position = Vector2(250, 324)
+
+[node name="Button2" parent="Buttons" instance=ExtResource("2_7jktm")]
+position = Vector2(576, 250)
+
+[node name="Button3" parent="Buttons" instance=ExtResource("2_7jktm")]
+position = Vector2(902, 324)
+
+[node name="Button4" parent="Buttons" instance=ExtResource("2_7jktm")]
+position = Vector2(576, 398)
+
+[node name="Spawners" type="Node2D" parent="."]
+
+[node name="PlayerSpawner" type="MultiplayerSpawner" parent="Spawners"]
+_spawnable_scenes = PackedStringArray("uid://dt608kbd42agm")
+spawn_path = NodePath("../../Players")
+
+[node name="BulletSpawner" type="MultiplayerSpawner" parent="Spawners"]
+_spawnable_scenes = PackedStringArray("uid://2hwgxdfyivlh")
+spawn_path = NodePath("../../Bullets")
+
+[node name="DoorSpawner" type="MultiplayerSpawner" parent="Spawners"]
+_spawnable_scenes = PackedStringArray("uid://bswgmxp16yce5")
+spawn_path = NodePath("../../Doors")
+
+[node name="Players" type="Node2D" parent="."]
+position = Vector2(0, -1)
+
+[node name="Player1" type="Marker2D" parent="Players"]
+position = Vector2(100, 324)
+
+[node name="Player2" type="Marker2D" parent="Players"]
+position = Vector2(576, 100)
+
+[node name="Player3" type="Marker2D" parent="Players"]
+position = Vector2(1050, 324)
+
+[node name="Player4" type="Marker2D" parent="Players"]
+position = Vector2(576, 548)
+
+[node name="Bullets" type="Node2D" parent="."]
+position = Vector2(0, -1)
+
+[node name="Doors" type="Node2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Door" parent="Doors" instance=ExtResource("5_7jktm")]
+visible = false

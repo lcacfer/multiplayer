@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Avatar" load_steps=3 format=3 uid="uid://b38nfipjcd0iq"]
+
+[ext_resource type="Texture2D" uid="uid://c70ixef7nl437" path="res://images/characters/p2.png" id="1_d4f40"]
+[ext_resource type="Script" uid="uid://cdvkohwl2hsua" path="res://scripts/avatar.gd" id="2_ta5jo"]
+
+[resource]
+script = ExtResource("2_ta5jo")
+id = "p2"
+image = ExtResource("1_d4f40")
+bullet_color = Color(0.20516664, 0.6340923, 0.75806063, 1)
+metadata/_custom_type_script = "uid://cdvkohwl2hsua"

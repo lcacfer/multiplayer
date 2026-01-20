@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bswgmxp16yce5"]
+
+[ext_resource type="Texture2D" uid="uid://c4lsvoco3inm3" path="res://images/door.png" id="1_hpvv5"]
+[ext_resource type="Script" uid="uid://cr2isd5mo2jik" path="res://scripts/door.gd" id="2_uvdjg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryrav"]
+size = Vector2(28, 60)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_uvdjg"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+
+[node name="Door" type="Sprite2D"]
+texture = ExtResource("1_hpvv5")
+script = ExtResource("2_uvdjg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ryrav")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_uvdjg")

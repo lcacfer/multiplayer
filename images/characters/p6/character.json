@@ -1,0 +1,496 @@
+{
+  "version": 2,
+  "bodyType": "female",
+  "selections": {
+    "body": {
+      "itemId": "body",
+      "variant": "zombie_green",
+      "name": "Body color (zombie_green)"
+    },
+    "head": {
+      "itemId": "heads_human_male",
+      "variant": "zombie_green",
+      "name": "Human male (zombie_green)"
+    },
+    "expression": {
+      "itemId": "face_neutral",
+      "variant": "zombie_green",
+      "name": "Neutral (zombie_green)"
+    },
+    "hair": {
+      "itemId": "hair_plain",
+      "variant": "dark gray",
+      "name": "Plain (dark gray)"
+    },
+    "clothes": {
+      "itemId": "torso_clothes_longsleeve",
+      "variant": "purple",
+      "name": "Longsleeve (purple)"
+    },
+    "legs": {
+      "itemId": "legs_pants",
+      "variant": "purple",
+      "name": "Pants (purple)"
+    },
+    "shoes": {
+      "itemId": "feet_shoes_basic",
+      "variant": "purple",
+      "name": "Basic Shoes (purple)"
+    },
+    "wings": {
+      "itemId": "wings_lizard",
+      "variant": "zombie_green",
+      "name": "Lizard Wings (zombie_green)"
+    }
+  },
+  "selectedAnimation": "walk",
+  "showTransparencyGrid": true,
+  "applyTransparencyMask": false,
+  "matchBodyColorEnabled": true,
+  "compactDisplay": false,
+  "enabledLicenses": {
+    "CC0": true,
+    "CC-BY-SA": true,
+    "CC-BY": true,
+    "OGA-BY": true,
+    "GPL": true
+  },
+  "enabledAnimations": {
+    "spellcast": false,
+    "thrust": false,
+    "walk": false,
+    "slash": false,
+    "shoot": false,
+    "hurt": false,
+    "climb": false,
+    "idle": false,
+    "jump": false,
+    "sit": false,
+    "emote": false,
+    "run": false,
+    "watering": false,
+    "combat": false,
+    "1h_slash": false,
+    "1h_backslash": false,
+    "1h_halfslash": false
+  },
+  "url": "https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/#sex=female&body=Body_color_zombie_green&head=Human_male_zombie_green&expression=Neutral_zombie_green&hair=Plain_dark%20gray&clothes=Longsleeve_purple&legs=Pants_purple&shoes=Basic_Shoes_purple&wings=Lizard_Wings_zombie_green",
+  "layers": [
+    {
+      "itemId": "wings_lizard",
+      "variant": "zombie_green",
+      "zPos": 5,
+      "layerNum": 2,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "body/wings/lizard/adult/bg/spellcast/zombie_green.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "body",
+      "variant": "zombie_green",
+      "zPos": 10,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "body/bodies/female/spellcast/zombie_green.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "feet_shoes_basic",
+      "variant": "purple",
+      "zPos": 15,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "feet/shoes/basic/thin/spellcast/purple.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "legs_pants",
+      "variant": "purple",
+      "zPos": 20,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "legs/pants/thin/spellcast/purple.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "torso_clothes_longsleeve",
+      "variant": "purple",
+      "zPos": 35,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "torso/clothes/longsleeve/longsleeve/female/spellcast/purple.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "heads_human_male",
+      "variant": "zombie_green",
+      "zPos": 100,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "head/heads/human/male/spellcast/zombie_green.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "face_neutral",
+      "variant": "zombie_green",
+      "zPos": 101,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "head/faces/male/neutral/spellcast/zombie_green.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "wings_lizard",
+      "variant": "zombie_green",
+      "zPos": 105,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "body/wings/lizard/adult/fg/spellcast/zombie_green.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "hair_plain",
+      "variant": "dark gray",
+      "zPos": 120,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "hair/plain/adult/spellcast/dark_gray.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "fileName": "body/bodies/female/walk/zombie_green.png",
+      "file": "body/bodies/female",
+      "notes": "see details at https://opengameart.org/content/lpc-character-bases",
+      "authors": [
+        "Benjamin K. Smith (BenCreating)",
+        "bluecarrot16",
+        "TheraHedwig",
+        "Evert",
+        "MuffinElZangano",
+        "Durrani",
+        "Pierre Vigier (pvigier)",
+        "ElizaWy",
+        "Matthew Krohn (makrohn)",
+        "Johannes Sjölund (wulax)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "https://opengameart.org/content/lpc-ladies",
+        "https://opengameart.org/content/lpc-7-womens-shirts",
+        "https://opengameart.org/content/lpc-jump-expanded",
+        "https://opengameart.org/content/lpc-be-seated",
+        "https://opengameart.org/content/lpc-revised-character-basics",
+        "https://gitlab.com/vagabondgame/lpc-characters",
+        "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+        "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle"
+      ]
+    },
+    {
+      "fileName": "head/heads/human/male/walk/zombie_green.png",
+      "file": "head/heads/human/male",
+      "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+      "authors": [
+        "bluecarrot16",
+        "Benjamin K. Smith (BenCreating)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-character-bases"
+      ]
+    },
+    {
+      "fileName": "head/faces/male/neutral/walk/zombie_green.png",
+      "file": "head/faces",
+      "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "ElizaWy",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/ulpc-expanded-expressions"
+      ]
+    },
+    {
+      "fileName": "hair/plain/adult/walk/dark_gray.png",
+      "file": "hair/plain",
+      "notes": "",
+      "authors": [
+        "JaidynReiman",
+        "Manuel Riecke (MrBeast)",
+        "Joe White"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/ponytail-and-plain-hairstyles",
+        "https://opengameart.org/content/lpc-expanded-hair"
+      ]
+    },
+    {
+      "fileName": "torso/clothes/longsleeve/longsleeve/female/walk/purple.png",
+      "file": "torso/clothes/longsleeve/longsleeve/female",
+      "notes": "original by ElizaWy, edited to v3 bases by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+      "authors": [
+        "bluecarrot16",
+        "ElizaWy",
+        "JaidynReiman",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-7-womens-shirts",
+        "http://opengameart.org/content/lpc-clothing-updates",
+        "https://opengameart.org/content/lpc-revised-character-basics",
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+        "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+        "https://opengameart.org/content/lpc-expanded-simple-shirts"
+      ]
+    },
+    {
+      "fileName": "legs/pants/thin/walk/purple.png",
+      "file": "legs/pants/thin",
+      "notes": "original male pants by wulax, edited for female by Joe White, recolors and edits to v3 base by bluecarrot16, teen legs by ElizaWy derived from base, climb/jump/run/sit/emotes/revised combat by JaidynReiman based on ElizaWy's LPC Revised",
+      "authors": [
+        "bluecarrot16",
+        "JaidynReiman",
+        "ElizaWy",
+        "Joe White",
+        "Matthew Krohn (makrohn)",
+        "Johannes Sjölund (wulax)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "http://opengameart.org/content/lpc-clothing-updates",
+        "https://opengameart.org/content/lpc-expanded-pants"
+      ]
+    },
+    {
+      "fileName": "feet/shoes/basic/thin/walk/purple.png",
+      "file": "feet/shoes",
+      "notes": "original by wulax, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "bluecarrot16",
+        "Johannes Sjölund (wulax)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "http://opengameart.org/content/lpc-clothing-updates",
+        "https://opengameart.org/content/lpc-expanded-socks-shoes"
+      ]
+    },
+    {
+      "fileName": "body/wings/lizard/adult/fg/walk/zombie_green.png",
+      "file": "body/wings/lizard",
+      "notes": "edited for v3 bases and recolored by bluecarrot16, sit/jump/run/emote/revised combat by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "Nila122",
+        "bluecarrot16"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/drakes-and-lizardfolk",
+        "https://opengameart.org/content/lpc-wings-new-animations"
+      ]
+    }
+  ]
+}

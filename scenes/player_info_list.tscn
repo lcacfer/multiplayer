@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhdd2yibs0k5p"]
+
+[ext_resource type="Script" uid="uid://cy35c26r4u0jn" path="res://scripts/player_info_list.gd" id="1_nblow"]
+[ext_resource type="Texture2D" uid="uid://blqjqtqr84x84" path="res://images/characters/p1.png" id="2_mx0h4"]
+
+[node name="Player" type="HBoxContainer"]
+script = ExtResource("1_nblow")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "1"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_mx0h4")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.44705883, 0.8235294)
+theme_override_font_sizes/font_size = 32
+text = "Server"

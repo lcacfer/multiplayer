@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://co5bqm6tilfsc"]
+
+[ext_resource type="Script" uid="uid://jemirfxonvcb" path="res://scripts/main.gd" id="1_o5qli"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_o5qli")
+
+[node name="MainContainer" type="VBoxContainer" parent="."]
+offset_left = 261.0
+offset_top = 117.0
+offset_right = 860.0
+offset_bottom = 437.0
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="MainContainer"]
+layout_mode = 2
+text = "Choose Multiplayer Lobby"
+horizontal_alignment = 1
+
+[node name="ButtonContainer" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="SteamButton" type="Button" parent="MainContainer/ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Steam"
+
+[node name="LANButton" type="Button" parent="MainContainer/ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LAN"
+
+[connection signal="pressed" from="MainContainer/ButtonContainer/SteamButton" to="." method="_on_steam_button_pressed"]
+[connection signal="pressed" from="MainContainer/ButtonContainer/LANButton" to="." method="_on_lan_button_pressed"]
