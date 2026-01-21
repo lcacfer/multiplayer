@@ -4357,7 +4357,7 @@ shape = SubResource("RectangleShape2D_7jktm")
 
 [node name="LPCAnimatedSprite2D" parent="." instance=ExtResource("3_60mlk")]
 sprite_frames = SubResource("SpriteFrames_3xdjv")
-frame_progress = 0.27077222
+frame_progress = 0.26762605
 animation_data = SubResource("Resource_0anxw")
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
@@ -4374,6 +4374,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ShootCD" type="Timer" parent="."]
-wait_time = 0.2
+wait_time = 0.3
+one_shot = true
 
 [connection signal="animation_finished" from="LPCAnimatedSprite2D" to="." method="_on_animation_finished"]
+[connection signal="timeout" from="ShootCD" to="." method="_on_shoot_cd_timeout"]

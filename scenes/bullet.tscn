@@ -22,6 +22,9 @@ properties/3/replication_mode = 1
 properties/4/path = NodePath(".:collision_mask")
 properties/4/spawn = true
 properties/4/replication_mode = 1
+properties/5/path = NodePath(".:collision_layer")
+properties/5/spawn = true
+properties/5/replication_mode = 1
 
 [node name="Bullet" type="RigidBody2D" groups=["Bullet"]]
 collision_layer = 16
@@ -37,3 +40,8 @@ shape = SubResource("CircleShape2D_qk4yj")
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_y25gk")
+
+[node name="Duration" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Duration" to="." method="dispose_bullet"]

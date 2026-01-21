@@ -42,7 +42,7 @@ func start_game_server():
 			var player_data = Global.current_lobby.players[player]
 			player_data["index"] = i
 			player_data["id"] = player
-			player_spawner.spawn(player_data)
+			player_spawner.spawn(player_data) # calls custom function spawn_player
 			i += 1
 		# connect button signals only on server
 		var button_nodes = $Buttons.get_children()
@@ -53,10 +53,13 @@ func start_game_server():
 
 # spawn player custom function, needed for properties initialization
 func spawn_player(_player_data):
+	var _index = _player_data["index"]
 	var _player_instance = player_scene.instantiate()
-	_player_instance.global_position = player_spawn_positions[_player_data["index"]].global_position
+	_player_instance.global_position = player_spawn_positions[_index].global_position
 	_player_instance.name = str(_player_data["id"])
-	_player_instance.set_index(_player_data["index"]) 
+	_player_instance.collision_layer = player_layers[_index]
+	_player_instance.collision_mask = collision_masks[_index]
+	_player_instance.index = _index 
 	return _player_instance
 
 func spawn_bullet(_bullet_data):
